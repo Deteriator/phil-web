@@ -32,6 +32,8 @@ h1,h2,h3{
         align-items:center;
         background-color:#995C87;
         color:#ffffff;
+        width:25%;
+        margin-right:30px;
     }
     header nav{
         display:flex;
@@ -39,25 +41,47 @@ h1,h2,h3{
         align-items:center;    
     }
     header ul{
+        padding:0;
         list-style:none;
+        text-align:center;
+    }
+    header ul li{
+        padding-bottom:10px;
+    }
+    nav{
+        margin-top:30px;
+    }
+    nav h1{
+        font-size:40px;
+    }
+    nav h2{
+        font-size: 18px;
+    }
+    .header-img{
+        width:250px;
+        height:250px;
     }
     .home{
-        margin-right:3%;
+        margin:0 3%;
         grid-area:jumbo;
         height:1500px;
     }
     .about{
-        margin-right:3%;
+        margin:0 3%;
         grid-area:about;
         height:1500px;
     }
+    .about img{
+        width:200px;
+        height:200px;
+    }
     .portfolio{
-        margin-right:3%;
+        margin:0 3%;
         grid-area:port;
         height:1500px;
     }
     .contact{
-        margin-right:3%;
+        margin:0 3%;
         grid-area:cont;
         height:1500px;
     }
