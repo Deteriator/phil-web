@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin:0;
     font-family: 'Raleway', sans-serif;
@@ -57,19 +60,39 @@ h1,h2,h3{
     nav h2{
         font-size: 18px;
     }
+    a{
+        color:#ffffff;
+        text-decoration:none;
+    }
+    a:after {    
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #fff;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    a:hover:after { 
+      width: 100%; 
+      left: 0; 
+    }
     .header-img{
-        width:250px;
+        width:70%;
         height:250px;
     }
     .home{
         margin:0 3%;
         grid-area:jumbo;
-        height:1500px;
+        height:700px;
     }
     .about{
         margin:0 3%;
         grid-area:about;
-        height:1500px;
+        height:500px;
     }
     .about img{
         width:200px;
@@ -78,11 +101,11 @@ h1,h2,h3{
     .portfolio{
         margin:0 3%;
         grid-area:port;
-        height:1500px;
+        height:500px;
     }
     .contact{
         margin:0 3%;
         grid-area:cont;
-        height:1500px;
+        height:500px;
     }
 }
