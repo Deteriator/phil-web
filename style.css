@@ -1,0 +1,64 @@
+body{
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+}
+h1,h2,h3{
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px){
+    .grid{
+        display:grid;
+        grid-template-rows:1fr auto;
+        grid-template-columns:25% 75%;
+        grid-template-areas: 
+        "header jumbo "
+        "header about "
+        "header port"
+        "header cont ";
+    }
+    header{
+        grid-area:header;
+        display:flex;
+        position:fixed;
+        height:100%;
+        flex-direction:column;
+        align-items:center;
+        background-color:#995C87;
+        color:#ffffff;
+    }
+    header nav{
+        display:flex;
+        flex-direction:column;
+        align-items:center;    
+    }
+    header ul{
+        list-style:none;
+    }
+    .home{
+        margin-right:3%;
+        grid-area:jumbo;
+        height:1500px;
+    }
+    .about{
+        margin-right:3%;
+        grid-area:about;
+        height:1500px;
+    }
+    .portfolio{
+        margin-right:3%;
+        grid-area:port;
+        height:1500px;
+    }
+    .contact{
+        margin-right:3%;
+        grid-area:cont;
+        height:1500px;
+    }
+}
